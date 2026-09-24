@@ -593,6 +593,26 @@ h1,h2,h3,h4{margin:0;line-height:1.1;letter-spacing:-.032em;font-weight:800;}
         </div>
       </article>
 
+      <article class="prj rv">
+        <div class="prj__n">04</div>
+        <div>
+          <div class="prj__stack">Machine Learning · LightGBM · SHAP · FastAPI · Docker</div>
+          <h3>Previsão de Churn: do modelo à produção</h3>
+          <p>Modelo que estima a chance de cada cliente cancelar o serviço e decide em quem vale investir uma oferta de retenção. Comparei três modelos com validação cruzada, escolhi pela PR-AUC por a classe ser minoritária e defini o ponto de corte pelo lucro da campanha, não pelo padrão de 0,5. Cada previsão vem explicada com SHAP em linguagem de negócio. O modelo está em produção como API FastAPI com app web, empacotado em Docker, com testes automatizados no GitHub Actions e deploy automático.</p>
+          <p class="prj__res">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+            <span>RESULTADO: na simulação com clientes que o modelo nunca viu, a campanha guiada por ele gera US$ 33,3 mil contra US$ 0,6 mil de abordar todos, encontrando 77% de quem ia cancelar.</span>
+          </p>
+          <div class="prj__lk">
+            <a href="https://previsao-churn.onrender.com" target="_blank" rel="noopener noreferrer">Testar o app</a>
+            <a href="https://github.com/myttrindade/previsao-churn" target="_blank" rel="noopener noreferrer">Ver no GitHub</a>
+          </div>
+        </div>
+        <div class="prj__ph">
+          <img src="prints/previsao-churn.jpg" alt="App de previsão de churn mostrando 80,5% de chance de cancelamento, risco alto, recomendação de abordar o cliente e os três fatores que mais pesaram" loading="lazy">
+        </div>
+      </article>
+
     </div>
   </div>
 </section>
