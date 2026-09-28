@@ -524,13 +524,17 @@ h1,h2,h3,h4{margin:0;line-height:1.1;letter-spacing:-.032em;font-weight:800;}
       <article class="prj rv">
         <div class="prj__n">01</div>
         <div>
-          <div class="prj__stack">Python · Streamlit · Ollama (LLM local) · RAG</div>
-          <h3>mytek Chat: assistente de IA local com RAG</h3>
-          <p>Chatbot de atendimento para uma empresa real (mytek), com o modelo de linguagem rodando 100% local via Ollama, sem custo por token e sem dado saindo da máquina. Construí o pipeline de RAG do zero (extração e chunking do PDF da política comercial, embeddings e busca por similaridade) e resolvi problemas reais no caminho: uma tabela de preços cortada entre chunks fazia o agente confundir valores, e o Streamlit interpretava "R$" como fórmula matemática, corrompendo os preços na tela.</p>
+          <div class="prj__stack">Python · LangGraph · FastAPI · RAG agêntico</div>
+          <h3>mytek Chat: assistente de IA com RAG agêntico</h3>
+          <p>Assistente de atendimento para uma empresa real (mytek), hoje em duas versões: um app local 100% offline via Ollama, e uma API na nuvem (FastAPI + Groq) que alimenta um widget de chat embutido no site oficial da empresa. A versão na nuvem usa um workflow agêntico de RAG construído com LangGraph: reescreve a pergunta considerando o histórico da conversa, busca o contexto combinando embeddings com busca por palavra-chave (BM25), reordena os resultados por relevância real e, antes de responder, um passo de auto-avaliação decide se o contexto encontrado é suficiente, refazendo a busca em vez de inventar uma resposta sem embasamento.</p>
           <p class="prj__res">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
-            <span>RESULTADO: respostas sempre alinhadas à política oficial (preços, cancelamento, regras de atendimento), sem inventar condição que não esteja documentada.</span>
+            <span>RESULTADO: respostas sempre alinhadas à política oficial (preços, cancelamento, regras de atendimento), embutidas ao vivo no site da empresa, sem inventar condição que não esteja documentada.</span>
           </p>
+          <div class="prj__lk">
+            <a href="https://mytek-chat-api.onrender.com" target="_blank" rel="noopener noreferrer">Ver demo</a>
+            <a href="https://github.com/myttrindade/mytek-chat" target="_blank" rel="noopener noreferrer">Ver no GitHub</a>
+          </div>
         </div>
         <div class="prj__ph">
           <img src="prints/mytek-chat-demo.gif" alt="Demonstração do mytek Chat respondendo em tempo real sobre teste grátis e preço do CRM, com base na política da empresa" style="object-fit:contain;">
