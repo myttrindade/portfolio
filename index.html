@@ -640,6 +640,26 @@ h1,h2,h3,h4{margin:0;line-height:1.1;letter-spacing:-.032em;font-weight:800;}
         </div>
       </article>
 
+      <article class="prj rv">
+        <div class="prj__n">07</div>
+        <div>
+          <div class="prj__stack">Python · PostgreSQL · SQL · Arquitetura medalhão · JavaScript</div>
+          <h3>Varejo Farmacêutico: pipeline em camadas e painel interativo</h3>
+          <p>Projeto de ponta a ponta que parte de uma base de varejo farmacêutico cheia de problemas e termina num painel web interativo. Um script em Python lê os arquivos, trata codificação e separador e carrega 48 mil vendas na camada bronze, tudo em texto e com o rastreio do arquivo e da linha de origem. A silver tipa os dados, cria chaves e restrições e separa o que não passa num log de qualidade: lote de vendas reinserido, produto vendido sem cadastro, cidades sem acento e formas de pagamento escritas de jeitos diferentes. A gold é uma estrela com as regras de negócio já calculadas (devolução na data da venda, CMV com retorno ao estoque, comissão pela vigência e margem de contribuição). O painel, em HTML, CSS e JavaScript, tem 7 áreas com 31 subabas, filtros e filtro cruzado como no Power BI: clicar em qualquer gráfico filtra todos os outros. Dados fictícios.</p>
+          <p class="prj__res">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+            <span>RESULTADO: da base bruta ao painel com um único script, com os problemas de qualidade documentados em vez de escondidos e uma análise que mostra de onde vem a margem: por canal, categoria, forma de pagamento, loja e horário.</span>
+          </p>
+          <div class="prj__lk">
+            <a href="prints/varejo-farmaceutico-demo.mp4" target="_blank" rel="noopener noreferrer">Ver vídeo</a>
+            <a href="https://github.com/myttrindade/varejo-farmaceutico" target="_blank" rel="noopener noreferrer">Ver no GitHub</a>
+          </div>
+        </div>
+        <div class="prj__ph">
+          <video src="prints/varejo-farmaceutico-demo.mp4" poster="prints/varejo-farmaceutico.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Demonstração do painel navegando pelo carrossel e pelas áreas Financeiro, Produtos, Lojas e Regiões, Clientes e Simulador, com filtro cruzado entre os gráficos" style="width:100%;height:100%;object-fit:contain;"></video>
+        </div>
+      </article>
+
     </div>
   </div>
 </section>
